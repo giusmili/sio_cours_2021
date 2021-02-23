@@ -1,0 +1,103 @@
+/*reset css*/
+html{
+    font-size: 62.5%;
+    background: #000 url(https://cdn.pocket-lint.com/r/s/1200x/assets/images/149433-tv-feature-what-order-should-you-watch-the-batman-movies-and-shows-image1-gyquc3whrm.jpg)no-repeat fixed center center / cover;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+/* personal scrollbar */
+*{
+    /* ff */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+*::-webkit-scrollbar{
+    width: .2rem;
+}
+/*theme*/
+/* palette couleur variables css */
+:root{
+    --color-bg-default: #3d3838;
+    --color-link: #333;
+    --color-body: #fafafa;
+    --header-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+main{
+    box-shadow: 0 0 0.8rem var(--color-bg-default);
+}
+header, main{
+    max-width: 90rem;
+    border: .1rem solid transparent;
+    background-color: rgba(255,255,255,0.8);
+    margin:0 auto;
+    padding: 0.5rem;
+    
+}
+
+header h1::before{
+    content:'\01F3AC';
+    vertical-align: .3rem;
+    margin-right: .1rem;
+}
+section > h2, nav > h2{
+    position: sticky;
+    top: 0;
+    background-color: var(--header-color);
+    line-height: 4.5rem;
+    padding: .5rem;
+    text-transform: capitalize;
+    box-shadow: 0 .3rem .1rem 0 #ccc;
+    text-shadow: .1rem .1rem 0 var(--color-link);
+    color:#595959;
+}
+section p{
+    padding: .5rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+nav ol li{
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+nav ol li:hover > a{
+    text-decoration: underline;
+}
+/* image */
+.picture img{
+    display: block;
+    width: 100%;
+}
+.picture{
+    padding-bottom:.5rem;
+}
+section .history{
+    transition-duration: 0.9s;
+}
+section .history:target{
+    background-color: var(--color-bg-default);
+    color: #fff;
+}
+footer p{
+    text-align: center;
+    text-transform: capitalize;
+}
