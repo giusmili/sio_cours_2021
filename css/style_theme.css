@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap');
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font: 1.6rem 'Open Sans',sans-serif; /* police en lecture */
+    margin: 0;
+    background-color: #52a0bd;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    line-height: 2.5rem;
+}
+address{
+    font-style: normal;
+}
+h1,h2,h3,p,blockquote,figure,ul{
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+}
+button{
+    border: 0;
+    background-color: transparent;
+    font-size: initial;
+    text-transform: uppercase;
+}
+
+/* couleur du theme */
+main, aside, footer{
+    box-shadow: 0 0 1rem rgba(75, 73, 73, 0.2);
+}
+header{
+    background-color: #005a78;
+    margin-bottom: 1rem;
+}
+
+
+section h2, article h3, figcaption h3, header h1{
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+}
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #fafafa;
+    font-weight: 100;
+    font-size: 4rem;
+    text-shadow: .1rem .1rem 0 #222;
+}
+figcaption h3::before, figcaption h3::after, 
+section h2::after, 
+section h2::before, 
+article h3::after, article h3::before{
+    content: '-';
+    vertical-align: .1rem;
+    margin:0 .5rem;
+}
+figcaption h3, figcaption p{
+    text-align: center;
+}
+figcaption p{
+    padding-bottom: .5rem;
+}
+address ul{
+    background-color: transparent;
+    line-height: 3.5rem;
+}
+address ul li{
+    background-color: #2c3e50;
+    padding: .5rem;
+    margin-bottom: .1rem;
+    color: #fff;
+}
+address ul li a{
+    display: block;
+    width: 100%;
+    color: inherit;
+}
+address ul li a::before{
+    content: "@";
+}
+address ul li:last-child{
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+address ul li:last-child:hover{
+    background-color: #4875a1;
+}
+
+aside{
+    text-align: center;
+}
+aside p{
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+aside, main, footer{
+    max-width: 80rem;
+    border: solid .1rem #999;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+aside button, aside a{
+    display: inline-block;
+    width: 20rem;
+    text-align: center;
+    line-height: 3.9rem;
+    background-color: #ccc;
+    vertical-align: top;
+    background-color: #1D71AA;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .5rem;
+    text-shadow: .1rem .1rem 0 #222;
+    box-shadow: -.1rem -.1rem .3rem #222 inset;
+}
+aside button:nth-child(2n+1){
+    margin:0 .8rem;
+    background-color: #c0392b; /* \274c */
+    
+}
+aside button:nth-child(2n+1)::before{
+    content: "\274c";
+    margin-right: .5rem;
+}
+aside button{
+    background-color: #166A3D;
+}
+aside button::before{
+    content: "\271a";
+    margin-right: .5rem;
+}
+figure img{
+    display: block;
+    width: 100%;
+}
+footer{
+    text-align: center;
+    color: #fff;
+    background-color: #2c3e50;
+    border: solid .1rem transparent;
+}

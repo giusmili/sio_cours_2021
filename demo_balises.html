@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Structurer en HTML5"><!--pour le SEO-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cours html</title>
+        <link rel="icon" type="image/png" href="./asset/logo.png"><!-- obligatoire w3c -->
+        <link rel="stylesheet" href="./css/style_theme.css">
+    </head>
+    <body>
+        <header>
+            <h1>La sémantique html<sup>5</sup></h1>
+        </header>
+       
+        <main>
+            <section>
+                <h2>Les comics dc</h2>
+
+                <p>
+                    DC Comics est l'une des principales maisons d’édition américaines de comics. 
+                    DC Comics fait partie du conglomérat WarnerMedia. Les initiales 
+                    « DC » sont une abréviation de « Detective Comics », mais ont aussi été 
+                    « détournées » de leur sens originel par Marvel Comics pour désigner DC comme la 
+                    « Distinguée concurrence »[réf. nécessaire]. DC comporte plusieurs filiales, 
+                    notamment Vertigo, plutôt dédiée au fantastique, et Wildstorm, 
+                    plutôt dédiée à la science-fiction et aux aventures de super-héros plus modernes. 
+                </p>
+            </section>
+            <article>
+                <h3>Superman le retour</h3>
+                <blockquote>
+                    <p>
+                        <cite lang="en">
+                            Hello world fine?
+                        </cite>
+                    </p>
+                </blockquote> 
+            </article>
+            <!--<div class="picture" role="img" aria-label="figurine de Superman">
+                <img src="https://www.francetvinfo.fr/pictures/RMhC9HFG1bBrXoJnqazwfd9KOSI/fit-in/720x/2019/04/12/hub_super01_cvr_1500_5b3e561f3788f5.51606704.jpg" alt="Superman dc justicier">
+            </div>-->
+            <figure role="group" aria-label="Superman au coucher de soleil [Description]">
+                <img src="https://www.francetvinfo.fr/pictures/RMhC9HFG1bBrXoJnqazwfd9KOSI/fit-in/720x/2019/04/12/hub_super01_cvr_1500_5b3e561f3788f5.51606704.jpg" alt="Superman au coucher de soleil">
+                <figcaption>
+                    <h3>Description</h3>
+                    <p>Plus vite que la lumière et au delà</p>
+                </figcaption>  
+            </figure>
+            <address>
+                <ul aria-labelledby="ville">
+                    <li id="ville">Paris</li>
+                    <li>14 rue du repos</li>
+                    <li>75020</li>
+                    <li><a href="mailto:addresse@gmail.com">Nous contacter &raquo;</a></li>
+                </ul>
+            </address>
+        </main>
+        <!--conteneur complémentaire pour des informations complémentaires-->
+        <aside>
+            <p>Choisissez votre comics dans la liste</p>
+            <a href="https://www.google.com/search?q=batman" title="aller à l'index" target="blank">rechercher &raquo;</a><!--
+            --><button type="button" name="supprimer">vider le panier</button><!--
+            --><button type="button" name="ajouter">ajouter au panier</button>
+        </aside>
+     
+        <footer aria-describedby="texte">
+            <p id="texte">&copy; - MIT - 2021</p>
+        </footer>
+        
+    </body>
+</html>
